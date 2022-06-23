@@ -1,0 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+header div.header-descuentos{
+    background-color: #1CD1B0;
+    padding: 5px;
+}
