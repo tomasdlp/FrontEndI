@@ -345,23 +345,10 @@ header nav li a:hover{
         font-weight: normal;
     }
     .list-piola {
+        width: 95vw;
         margin: 0;
         position: relative;
-        left: 16px;
-        
-    }
-    .list-piola li div{
-        z-index: 30;
-    }
-    .list-piola li::after{
-        content: '';
-        display: block;
-        width: calc(100vw - 32px);
-        height: 40px;
-        position: absolute;
-        background-color: var(--rojo-muy-palido);
-        left: 30px;
-        z-index: 1;
+        left: 8px;
     }
     .three div.cards-container {
         width: 90vw;
@@ -395,5 +382,36 @@ header nav li a:hover{
     footer div.up button{
         margin-bottom: 30px;
     }
-
+    footer div.down{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    footer div.down div{
+        width: 95vw;
+    }
+    div.down div:nth-child(3){
+        width: 45vw;
+        order: 2;
+    }
+    div.down div:nth-child(2)
+    {
+        width: 45vw;
+        order: 2;
+    }
+    div.down div.end div:nth-child(2){
+        width: 95vw;
+    }
+    div.down div.mobile-logo div{
+        display: flex;
+    }
+    div.down div.mobile-logo{
+        order: 4;
+    }
+    div.end div:nth-child(2){
+        display: none;
+    }
+    div.down div.mobile-logo::after{
+        content: 'Copyright 2020. All Rights Reserved';
+        color: var(--azul-grisaceo-oscuro);
+    }
 }
